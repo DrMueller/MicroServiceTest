@@ -8,13 +8,19 @@ Currently, the app is released to Azure via Github.
 - Create Resource
 - Navigate to the Resource
 - Deplyoment Sub-Tab --> Quickstart
-- Select Node.js
+- Select ASP.NET Core
 - Cloud based Source control
 - Follow the guided steps to configure
 
-## Specific folders
-The Angular CLI build by default to a dist-folder, therefore we should configure Azure to deploy from this one:
+## Configuring specific folder
+### Visual Studio
+- Go the the Project Options
+- Navigate to the "Build"-Tab
+- Select the "Release"-Configuration
+- Set the Output-Path to ..\Dist\netcoreapp1.1\
+
+### Azure
 - Navigate to the Resource
 - Select Settings --> Application Settings
-- On the App Settings, create a variable called *Project* with the relative path, for example "dist"
+- On the App Settings, create a variable called *Project* with the relative path defined in VS, for example "Dist\netcoreapp1.1"
 - Check, that the folder is not in .gitignore
