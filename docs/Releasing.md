@@ -14,6 +14,7 @@ Currently, the app is released to Azure via Github.
 
 ## Configuring specific folder
 ### Visual Studio
+- Set all Config-Files (f.e. appsettings.json) to "copy always"
 - Go the the Project Options
 - Navigate to the "Build"-Tab
 - Select the "Release"-Configuration
@@ -25,3 +26,6 @@ __Attention__ Visual Studio still adds "\netcoreapp1.1" automatically, so resett
 - Select Settings --> Application Settings
 - On the App Settings, create a variable called *Project* with the relative path defined in VS, for example "dist\netcoreapp1.1"
 - Check, that the folder is not in .gitignore
+
+## Troubleshooting
+### 403 / 404
