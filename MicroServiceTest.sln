@@ -5,9 +5,21 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mmu.MicroServiceTest", "src\MicroServiceTest\Mmu.MicroServiceTest.csproj", "{C8F96CD1-B26F-4A24-B49B-AF630020C20E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E387AC02-9E8C-4179-B3C3-D66B7EBDE72D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{E387AC02-9E8C-4179-B3C3-D66B7EBDE72D}"
 	ProjectSection(SolutionItems) = preProject
 		docs\_todos.txt = docs\_todos.txt
+		docs\Releasing.md = docs\Releasing.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{557F88D2-3589-4CA0-A48B-D6840C0B6F51}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\Release.bat = scripts\Release.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "internals", "internals", "{C6FAD051-81BD-45B1-BC12-ACEE6396BB74}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\internals\Build_Release.ps1 = scripts\internals\Build_Release.ps1
+		scripts\Internals\CommitAndPush_Git.ps1 = scripts\Internals\CommitAndPush_Git.ps1
 	EndProjectSection
 EndProject
 Global
@@ -23,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6FAD051-81BD-45B1-BC12-ACEE6396BB74} = {557F88D2-3589-4CA0-A48B-D6840C0B6F51}
 	EndGlobalSection
 EndGlobal
