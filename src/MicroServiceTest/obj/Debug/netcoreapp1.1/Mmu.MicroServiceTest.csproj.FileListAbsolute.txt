@@ -1,9 +1,0 @@
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\bin\Debug\netcoreapp1.1\Mmu.MicroServiceTest.deps.json
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\bin\Debug\netcoreapp1.1\Mmu.MicroServiceTest.runtimeconfig.json
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\bin\Debug\netcoreapp1.1\Mmu.MicroServiceTest.runtimeconfig.dev.json
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\bin\Debug\netcoreapp1.1\Mmu.MicroServiceTest.dll
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\bin\Debug\netcoreapp1.1\Mmu.MicroServiceTest.pdb
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\obj\Debug\netcoreapp1.1\Mmu.MicroServiceTest.csprojResolveAssemblyReference.cache
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\obj\Debug\netcoreapp1.1\Mmu.MicroServiceTest.AssemblyInfo.cs
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\obj\Debug\netcoreapp1.1\Mmu.MicroServiceTest.dll
-C:\MyGit\Personal\MicroServiceTest\src\MicroServiceTest\obj\Debug\netcoreapp1.1\Mmu.MicroServiceTest.pdb
