@@ -29,3 +29,6 @@ __Attention__ Visual Studio still adds "\netcoreapp1.1" automatically, so resett
 
 ## Troubleshooting
 ### 403 / 404
+- Navigate to App
+- Development Tools --> Console
+- Check if Files are existing
