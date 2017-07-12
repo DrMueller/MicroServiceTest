@@ -10,6 +10,5 @@ $sln = $solutionItems[0];
 
 [string]$solutionPath = $sln.FullName;
 cd "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\";
-./MsBuild.exe  $solutionPath /t:Build /p:Configuration=Release /p:TargetFramework=netcoreapp1.1
-
-
+# ./MsBuild.exe  $solutionPath /t:Build /p:Configuration=Release /p:TargetFramework=netcoreapp1.1
+./MsBuild.exe  $solutionPath /t:Build /p:Configuration=Release /p:TargetFramework=netcoreapp1.1 /p:DeployOnBuild=true /p:PublishProfile=FolderProfile

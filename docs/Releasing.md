@@ -1,7 +1,7 @@
 # General
 Currently, the app is released to Azure via Github.
 
-# Proceeding
+# Setting up the App
 ## General
 - Go to Azure Portal and log in
 - New Resource --> Web + Mobile --> Web App
@@ -20,6 +20,7 @@ Currently, the app is released to Azure via Github.
 - Select the "Release"-Configuration
 - Set the Output-Path to "..\dist\"
 __Attention__ Visual Studio still adds "\netcoreapp1.1" automatically, so resetting the path means it has to be removed again!
+__Attention2__ Currently msbuild.exe doesn't add the references to the output!
 
 ### Azure
 - Navigate to the Resource
@@ -32,3 +33,13 @@ __Attention__ Visual Studio still adds "\netcoreapp1.1" automatically, so resett
 - Navigate to App
 - Development Tools --> Console
 - Check if Files are existing
+
+# Setting up MongoDB
+## General
+- Go to Azure Portal and log in
+- New Resource --> Databases --> "Database as a service for MongoDB"
+- Follow the steps and create the Database
+- Navigate in the Resource to Collections --> Browse
+- Create the Database via "Add Database"
+- Navigate in the Resource to Settings --> Connection String
+- Add the Data to the appsettings.json
