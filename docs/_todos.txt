@@ -1,1 +1,2 @@
-Kindahow cant compile with msbuild. since it doesnt add the necessary assemblies
+Put Client and Server together
+Specification Pattern

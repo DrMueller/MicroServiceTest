@@ -1,5 +1,6 @@
 # General
-Currently, the app is released to Azure via Github.
+Currently, the App is released to Azure via Github.
+
 
 # Setting up the App
 ## General
@@ -12,17 +13,7 @@ Currently, the app is released to Azure via Github.
 - Cloud based Source control
 - Follow the guided steps to configure
 
-## Configuring specific folder
-### Visual Studio
-- Set all Config-Files (f.e. appsettings.json) to "copy always"
-- Go the the Project Options
-- Navigate to the "Build"-Tab
-- Select the "Release"-Configuration
-- Set the Output-Path to "..\dist\"
-__Attention__ Visual Studio still adds "\netcoreapp1.1" automatically, so resetting the path means it has to be removed again!
-__Attention2__ Currently msbuild.exe doesn't add the references to the output!
-
-### Azure
+## Azure
 - Navigate to the Resource
 - Select Settings --> Application Settings
 - On the App Settings, create a variable called *Project* with the relative path defined in VS, for example "dist\netcoreapp1.1"
@@ -33,6 +24,7 @@ __Attention2__ Currently msbuild.exe doesn't add the references to the output!
 - Navigate to App
 - Development Tools --> Console
 - Check if Files are existing
+
 
 # Setting up MongoDB
 ## General
