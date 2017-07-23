@@ -9,6 +9,7 @@ namespace Mmu.MicroServiceTest.Infrastructure.Initialization
     {
         public static IServiceProvider InitializeServices(IConfigurationRoot configRoot, IServiceCollection services)
         {
+            AddCors(services);
             AddConfigurationSettings(configRoot, services);
             var serviceProvider = IocInitialization.InitializeIoc(services);
 
@@ -19,6 +20,15 @@ namespace Mmu.MicroServiceTest.Infrastructure.Initialization
         {
             services.Configure<AppSettings>(configRoot.GetSection(AppSettings.SECTION_NAME));
             services.AddSingleton(configRoot);
+        }
+
+        private static void AddCors(IServiceCollection services)
+        {
+            services.AddCors(
+                options =>
+                {
+                    options.AddPolicy("All", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+                });
         }
     }
 }

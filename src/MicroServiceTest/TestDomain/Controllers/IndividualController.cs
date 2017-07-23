@@ -22,9 +22,9 @@ namespace Mmu.MicroServiceTest.TestDomain.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetIndividualAsync()
+        public async Task<IActionResult> GetAllIndividualsAsync()
         {
-            var individual = await _individualService.GetOneAsync();
+            var individual = await _individualService.GetAllAsync();
             return Ok(individual);
         }
     }

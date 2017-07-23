@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Mmu.MicroServiceTest.Common.DataAccess.Services;
@@ -25,6 +26,14 @@ namespace Mmu.MicroServiceTest.TestDomain.Services.Implementation
                     FirstName = "Matthias",
                     LastName = "Müller"
                 });
+
+            return result;
+        }
+
+        public async Task<IReadOnlyCollection<Individual>> GetAllAsync()
+        {
+            var individualRepo = _repositoryFactory.CreateRepository<Individual>();
+            var result = await individualRepo.LoadAllAsync();
 
             return result;
         }
