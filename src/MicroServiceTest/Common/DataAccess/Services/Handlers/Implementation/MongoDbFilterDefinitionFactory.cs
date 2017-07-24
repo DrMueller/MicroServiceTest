@@ -17,7 +17,7 @@ namespace Mmu.MicroServiceTest.Common.DataAccess.Services.Handlers.Implementatio
 
         private static FilterDefinition<TEntity> CreateEntityTypeFilterDefinition()
         {
-            var entityTypeFilter = new ExpressionFilterDefinition<TEntity>(x => x.EntityTypeName == typeof(TEntity).FullName);
+            var entityTypeFilter = new ExpressionFilterDefinition<TEntity>(x => x.EntityTypeName == typeof(TEntity).Name);
             return entityTypeFilter;
         }
     }

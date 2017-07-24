@@ -16,16 +16,10 @@ namespace Mmu.MicroServiceTest.TestDomain.Services.Implementation
             _repositoryFactory = repositoryFactory;
         }
 
-        public async Task<Individual> CreateIndividualAsync()
+        public async Task<Individual> CreateIndividualAsync(Individual individual)
         {
             var individualRepo = _repositoryFactory.CreateRepository<Individual>();
-            var result = await individualRepo.SaveAsync(
-                new Individual
-                {
-                    BirthDate = new DateTime(1986, 12, 29),
-                    FirstName = "Matthias",
-                    LastName = "Müller"
-                });
+            var result = await individualRepo.SaveAsync(individual);
 
             return result;
         }

@@ -6,7 +6,7 @@ namespace Mmu.MicroServiceTest.TestDomain.Services
 {
     public interface IIndividualService
     {
-        Task<Individual> CreateIndividualAsync();
+        Task<Individual> CreateIndividualAsync(Individual individual);
 
         Task<IReadOnlyCollection<Individual>> GetAllAsync();
 
